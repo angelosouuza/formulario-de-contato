@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- INÍCIO DO FORMULÁRIO -->
+    <div class="area-form">
+
+        <!-- TÍTULO DA PÁGINA -->
+        <h2>ATIVIDADE<span>SENAI</span></h2>
+        <p>Formulário e cadastro de currículo</p>
+
+        <div class="formulario">
+            <form method="POST">
+                <!-- DADOS PESSOAIS -->
+                <legend id="legenda-titulo">dados pessoais</legend><hr>
+                <input type="text" name="nome" placeholder="seu nome completo*" maxlength="100" required>
+                <input type="email" name="email" placeholder="seu email*" required>
+                <input type="text" name="endereco" placeholder="seu endereço">
+                <input type="number" name="celular" placeholder="celular*" required>
+                <input type="text" name="cep" placeholder="cep" maxlength="8">
+                <input type="text" placeholder="data de nascimento" onfocus="(this.type='date')" max="2004-12-31">
+
+                <!-- DADOS ESCOLARES -->
+                <legend id="legenda-titulo">dados escolares</legend><hr>
+                <legend>nome do curso 1</legend>
+                <input type="text" name="curso1" placeholder="nome do curso*" required>
+                <input type="text" name="hora" placeholder="horas*" required>
+                <input type="text" name="conclusao" placeholder="conclusão*" onfocus="(this.type='month')" min="2015-02-01" required>
+                
+                <legend>nome do curso 2</legend>
+                <input type="text" name="curso2" placeholder="nome do curso">
+                <input type="text" name="hora" placeholder="horas">
+                <input type="text" name="conclusao" placeholder="conclusão" onfocus="(this.type='month')">
+                
+                <legend>nome do curso 3</legend>
+                <input type="text" name="curso3" placeholder="nome do curso">
+                <input type="text" name="hora" placeholder="horas">
+                <input type="text" name="conclusao" placeholder="conclusão" onfocus="(this.type='month')">
+                
+                <!-- DADOS PROFISSIONAIS -->
+                <legend id="legenda-titulo">dados profissionais</legend><hr>
+                <legend>nome da empresa 1</legend>
+                <input type="text" name="empresa" placeholder="nome da empresa*" required>
+                <select required>
+                    <option value="" disabled selected>Atual?*</option>
+                    <option value="nao">Não</option>
+                    <option value="sim">Sim</option>
+                </select>
+                <input type="text" name="trabalho" placeholder="tempo de trabalho*" required>
+                <input type="text" name="cargo" placeholder="cargo">
+                <textarea name="descricao" id="descricao" placeholder="Descrição do cargo..."></textarea>
+                
+                <legend>nome da empresa 2</legend>
+                <input type="text" name="empresa" placeholder="nome da empresa">
+                <select>
+                    <option value="" disabled selected>Atual?</option>
+                    <option value="nao">Não</option>
+                    <option value="sim">Sim</option>
+                </select>
+                <input type="text" name="trabalho" placeholder="tempo de trabalho">
+                <input type="text" name="cargo" placeholder="cargo">
+                <textarea name="descricao" id="descricao" placeholder="Descrição do cargo..."></textarea>
+                
+                <legend>nome da empresa 3</legend>
+                <input type="text" name="empresa" placeholder="nome da empresa">
+                <select>
+                    <option value="" disabled selected>Atual?</option>
+                    <option value="nao">Não</option>
+                    <option value="sim">Sim</option>
+                </select>
+                <input type="text" name="trabalho" placeholder="tempo de trabalho">
+                <input type="text" name="cargo" placeholder="cargo">
+                <textarea name="descricao" id="descricao" placeholder="Descrição do cargo..."></textarea>
+
+                <!-- BOTÃO DE ENVIO -->
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
