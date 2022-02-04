@@ -34,7 +34,8 @@ p{
     background-color: #181920;
     display: flex;
     flex-direction: column;
-    width: 39vw;
+    width: 78vw;
+    max-width: 550px;
     height: auto;
     padding: 0px 30px;
 }
@@ -47,7 +48,8 @@ legend {
 }
 
 hr {
-    width: 39vw;
+    width: 78vw;
+    max-width: 550px;
     border-color: #1A7993;
 }
 
